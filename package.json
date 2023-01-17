@@ -1,1 +1,38 @@
-{}
+{
+  "name": "@nichoth/webnative-login",
+  "description": "A component that handles login via [webnative](https://github.com/fission-codes/webnative/).",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "mkdir dist && rm -rf dist/* && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    "./*": "./dist/*"
+  },
+  "files": [
+    "!./test/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/webnative-login.git"
+  },
+  "keywords": [
+    "webnative",
+    "fission"
+  ],
+  "author": "nichoth <nichoth@gmail.com> (http://nichoth.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichoth/webnative-login/issues"
+  },
+  "homepage": "https://github.com/nichoth/webnative-login#readme",
+  "devDependencies": {
+    "esbuild": "^0.17.1",
+    "tap-arc": "^0.3.5",
+    "tapzero": "^0.6.1",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4",
+    "webnative": "^0.35.2"
+  }
+}
